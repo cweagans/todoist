@@ -255,6 +255,11 @@ func main() {
 			Usage:   "Quick add a task",
 			Action:  Quick,
 		},
+		{
+			Name:   "ui",
+			Usage:  "Manage tasks in an interactive TUI",
+			Action: TUI,
+		},
 	}
 	if err := app.Run(os.Args); err != nil {
 		fmt.Fprintln(os.Stderr, "Error:", err)
